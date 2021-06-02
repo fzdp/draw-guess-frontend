@@ -1,0 +1,74 @@
+body.dark-mode,
+.dark-mode .modal-container,
+.dark-mode .message-input-container
+{
+  background-color: #323232;
+}
+
+body.dark-mode,
+.dark-mode a,
+.dark-mode .message-sender,
+.dark-mode .modal-header
+{
+  color: #606470;
+}
+.dark-mode .header-primary {
+  background-color: #3a4750;
+  color: #26252c;
+  box-shadow: none;
+}
+.dark-mode .border-primary,
+.dark-mode .border-secondary{
+  border: 3px solid #3a4750;
+}
+.dark-mode .users-container {
+  border-right: 3px solid #3a4750;
+}
+.dark-mode .button-primary,
+.dark-mode .form-primary,
+.dark-mode .form-input-field input[type="text"],
+.dark-mode .form-input-field input[type="email"],
+.dark-mode .form-input-field input[type="password"]
+{
+  border: 2px solid #3a4750;
+}
+
+.dark-mode .form-primary {
+  box-shadow: none;
+}
+
+.dark-mode label {
+  color: #606470;
+}
+.dark-mode input {
+  color: #ffffff;
+}
+
+.dark-mode .form-primary button,
+.dark-mode .form-input-field button,
+.dark-mode .button-primary
+{
+  background: #3a4750;
+  color: #ffffff;
+}
+
+.dark-mode .drawing-board .toolbar button.active {
+  border: 3px solid #26252c;
+}
+
+.dark-mode .drawing-board .color-tools button {
+  border: 6px solid #323232;
+}
+.dark-mode .section-title {
+  background-color: #3a4750;
+  color: #606470;
+}
+.dark-mode .room-item.active {
+  background-color: #3e432e;
+}
+.dark-mode .room-item {
+  box-shadow: none;
+}
+.dark-mode .setting-item {
+  border: 1px solid #3a4750;
+}

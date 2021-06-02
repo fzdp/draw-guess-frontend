@@ -1,0 +1,223 @@
+body {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    text-align: center;
+}
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+body.bg-transition {
+    transition: background-color 800ms linear;
+}
+.border-primary {
+    border: 3px solid #81b214;
+    border-radius: 6px;
+}
+.border-secondary {
+    border: 3px solid #ee7738;
+    border-radius: 6px;
+}
+.border-warning {
+    border: 3px solid #d44000;
+    border-radius: 6px;
+}
+.button-primary {
+    padding: 10px 30px;
+    background: #81b214;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.button-form-submit {
+    background-color: #81b214;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.button-warning {
+    padding: 10px 30px;
+    border: 2px solid #d44000;
+    border-radius: 6px;
+    background: none;
+}
+.form-primary {
+    padding: 30px 20px;
+    border: 2px solid #81b214;
+    border-radius: 6px;
+    width: 86%;
+    max-width: 500px;
+    margin: 35px auto 25px;
+    text-align: center;
+    box-shadow: 2px 2px 3px 4px #cccccc;
+}
+.form-primary .form-title {
+    margin-bottom: 20px;
+}
+.form-input-field {
+    text-align: left;
+    margin:0 0 15px;
+    width: 100%;
+}
+.form-input-field:last-child {
+    margin-bottom: 0;
+}
+.form-input-field + .msg-error {
+    position: relative;
+    top: -10px;
+}
+.form-input-field input[type="text"],
+.form-input-field input[type="email"],
+.form-input-field input[type="password"]
+{
+    border: 2px solid #81b214;
+    border-radius: 10px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.field-error input[type="text"],
+.field-error input[type="email"],
+.field-error input[type="password"]
+{
+    border: 2px solid #e84545;
+}
+.form-input-field button {
+    background: #81b214;
+    color: #ffffff;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 8px;
+}
+.form-inline-field {
+    display: flex;
+    align-items: baseline;
+}
+label + .form-inline-field {
+    margin-top: 5px;
+}
+.form-inline-field input[type="text"],
+.form-inline-field input[type="email"],
+.form-inline-field input[type="password"]
+{
+    flex: 1;
+    margin-right: 10px;
+    margin-top: 0;
+}
+.form-inline-field button {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 70px;
+}
+.form-input-field input[type="checkbox"] {
+    margin-right: 15px;
+}
+.form-input-field label {
+    color: #000033;
+}
+.msg-info {
+    color: #63686e;
+}
+.msg-error{
+    color: #e84545;
+}
+.y-scroll {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+.header-primary {
+    padding: 4px 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 32px;
+    background-color: #81b214;
+    color: #000033;
+    font-weight: bold;
+    box-shadow: 2px 3px 4px 2px #cccccc;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+}
+.header-right button {
+    margin-left: 8px;
+}
+.header-right a {
+    margin-left: 10px;
+}
+.header-primary button {
+    cursor: pointer;
+}
+.header-primary button > img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+.header-primary .header-left {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.header-primary .btn-back {
+    background: url("../back.png");
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+.btn-next {
+    background: url("../next.png");
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+.header-primary .header-center {
+    flex: 1;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.header-primary .header-right {
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+.header-primary + * {
+    margin-top: 50px;
+}
+.img-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    vertical-align: middle;
+}
+.img-avatar.lg {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+}
+.img-avatar.sm {
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+}
+@media screen and (max-width: 600px){
+    .button-primary,.button-warning {
+        padding: 5px 15px;
+    }
+}

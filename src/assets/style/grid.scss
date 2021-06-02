@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container.container-fixed {
+    max-width: 600px;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    flex: 1;
+}
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+.row *[class^="col-"] {
+    padding: 0 10px 10px;
+}
+.container.no-padding *[class^="col-"],
+.row.no-padding *[class^="col-"]{
+    padding: 0;
+}
+@media screen and (max-width: 900px) {
+    .col-1-medium {
+        width: 8.33%;
+    }
+    .col-2-medium {
+        width: 16.66%;
+    }
+    .col-3-medium {
+        width: 25%;
+    }
+    .col-4-medium {
+        width: 33.33%
+    }
+    .col-5-medium {
+        width: 41.66%;
+    }
+    .col-6-medium {
+        width: 50%;
+    }
+    .col-7-medium {
+        width: 58.33%;
+    }
+    .col-8-medium {
+        width: 66.66%;
+    }
+    .col-9-medium {
+        width: 75%;
+    }
+    .col-10-medium {
+        width: 83.33%;
+    }
+    .col-11-medium {
+        width: 91.66%;
+    }
+    .col-12-medium {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .col {
+        flex: 1;
+    }
+    .col-1-small {
+        width: 8.33%;
+    }
+    .col-2-small {
+        width: 16.66%;
+    }
+    .col-3-small {
+        width: 25%;
+    }
+    .col-4-small {
+        width: 33.33%
+    }
+    .col-5-small {
+        width: 41.66%;
+    }
+    .col-6-small {
+        width: 50%;
+    }
+    .col-7-small {
+        width: 58.33%;
+    }
+    .col-8-small {
+        width: 66.66%;
+    }
+    .col-9-small {
+        width: 75%;
+    }
+    .col-10-small {
+        width: 83.33%;
+    }
+    .col-11-small {
+        width: 91.66%;
+    }
+    .col-12-small {
+        width: 100%;
+    }
+}

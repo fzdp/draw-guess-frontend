@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+    color: #181618;
+}
+
+button:focus, input:focus {
+    outline: none;
+}
+
+button {
+    background: none;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+button.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+input[type="text"] {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #000033;
+}
+input {
+    background: none;
+}
