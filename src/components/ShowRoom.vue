@@ -504,13 +504,11 @@
 
       handleGameStateChange(newState) {
         this.clearCountDownTimer();
-        if (newState === "drawing" || newState === "wait_for_joining" || newState === "wait_for_ready") {
+        if (['drawing', 'wait_for_joining', 'wait_for_ready'].includes(newState)) {
           this.drawingBoardKey += 1;
-        }
-        if (newState === "choosing_word") {
+        } else if (newState === "choosing_word") {
           this.refreshWordsCount = 1;
-        }
-        if (newState === "round_over" && this.isPainter) {
+        } else if (newState === "round_over" && this.isPainter) {
           const canvasSize = this.$refs.drawingBoard.getStageContainerSize();
           this.roomChannel.perform("save_canvas_data", {
             width: canvasSize.width, height: canvasSize.height, image: this.$refs.drawingBoard.exportImage()
