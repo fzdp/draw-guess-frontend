@@ -108,14 +108,12 @@
             transformer.destroy();
             this.layer.draw();
           }
-        }
-        if (oldValue === "fill") {
+        } else if (oldValue === "fill") {
           this.toggleListening(false);
         }
         if (newValue === "select") {
           this.toggleDraggable(true);
-        }
-        if (newValue === "fill") {
+        } else if (newValue === "fill") {
           this.toggleListening(true);
         }
       }
